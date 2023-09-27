@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Danh sách Áo</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="listOfProduct.css">
+    <link rel="icon" href="images/iconkhac/title.png">
+</head>
+<body>
+    <!-- menu -->
+    <div class="header">
+        <div class="heardertop">
+           <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-light ">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                   </button>
+                   <div class="col-md-1">
+                       <a href="index.html">
+                        <img class="logo" src="images/index/logoSWE.gif">
+                       </a>
+                   </div>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                       <ul class="navbar-nav mr-auto">
+                           <li class="nav-item " style="margin-left: 65px;">
+                               <a class="navbar-brand" href="index.html">HOME</a>
+                           </li>
+                           <li class="nav-item ">
+                               <a class="navbar-brand" href="tops.html">TOPS</a>
+                           </li>
+                           <li class="nav-item ">
+                            <a class="navbar-brand" href="outerwear.html">OUTERWEAR</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navbar-brand" href="bottoms.html">BOTTOMS</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navbar-brand" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="navbar-brand dropdown-toggle" href="#"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SALE </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">10% OFF</a> <br>
+                              <a class="dropdown-item" href="#">15% OFF</a> <br>
+                              <a class="dropdown-item" href="#">20% OFF</a> <br>
+                              <a class="dropdown-item" href="#">30% OFF</a> <br>
+                              <a class="dropdown-item" href="#">40% OFF</a> <br>
+                              <a class="dropdown-item" href="#">50% OFF</a> <br>
+                              <a class="dropdown-item" href="#">60% OFF</a> <br>
+                            </div>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="navbar-brand" href="sizechart.html">SIZE CHART</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="navbar-brand" href="contact.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="navbar-brand" href="login.html">ĐĂNG NHẬP</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
+                          <img class="icon" src="images/index/pic-search.webp">
+                      </a>
+                      <form class="dropdown-menu" aria-labelledby="dropdownMenuButton" action="#">
+                          <input type="text" name="search" placeholder="Tìm kiếm..." required>
+                      </form>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="navbar-brand" href="cart.html"><img class="icon" src="images/index/cart-icon.webp"></a>
+                  </li>
+                   </div>
+               </nav>
+           </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="topbar">
+                <div class="left">
+                    <ul class="flex">
+                        <li><a href="#"><i class="fas fa-th-large"></i></a></li>
+                        <li><a href="#"><i class="fas fa-th-list"></i></a></li>
+                        <li><a href="#"><span style="font-weight: bold;">Lọc</span></a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <li class="dropdown">
+                        <label style="font-weight: 100; color: #555;">Sắp Xếp: </label>
+                        <a class="dropdown-toggle khung" data-toggle="dropdown" href="#">Sản phẩm nổi bật<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sản phẩm nổi bật</a></li>
+                            <li><a href="#">Giá: Tăng dần</a></li>
+                            <li><a href="#">Giá: Giảm dần</a></li>
+                            <li><a href="#">Tên: A-Z</a></li>
+                            <li><a href="#">Tên: Z-a</a></li>
+                            <li><a href="#">Cũ nhất</a></li>
+                            <li><a href="#">Mới nhất</a></li>
+                            <li><a href="#">Bán chạy nhất</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <hr style="margin-top: 150px;">
+            <div class="clearFix"></div>
+            <!-- chia col-md-3 cho pc và  col-xs-6 cho đt-->
+            <div class="row">
+                <!-- hàng 1 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-1-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-1-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>90'S TEE - WHITE</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-1-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-1-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CARGO SHORTS - SAND</p>
+                            <p>400,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-1-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-1-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CARGO SHORTS - BLACK</p>
+                            <p>400,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-1-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-1-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>NYLON CARGO PANTS - CREAM</p>
+                            <p>450,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 2 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-2-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-2-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>NYLON CARGO PANTS - BLACK</p>
+                            <p>450,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-2-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-2-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>FACILE TEE - SAND</p>
+                            <p>320,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-2-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-2-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PHOTO TEE - BLACK</p>
+                            <p>350,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-2-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-2-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PHOTO TEE - SAND</p>
+                            <p>350,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 3 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-3-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-3-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SWE® RAINCOAT - BLACK</p>
+                            <p>150,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-3-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-3-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CHECKERED BACKPACK</p>
+                            <p>500,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-3-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-3-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>BASIC MONO TEE - BLACK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-3-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-3-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>RANSOM TEE - WHITE</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 4 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-4-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-4-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PIXEL TEE - PINK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-4-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-4-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>BACK TEE - WHITE</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-4-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-4-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PAINTER TEE - CREAM</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-4-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-4-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PAINTER TEE - BLACK</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 5 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-5-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-5-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MOZZIE GALAXY - BLACK</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-5-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-5-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>STENCIL TEE - WHITE</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-5-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-5-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>EGYPT TEE - BLACK</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-5-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-5-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>EGYPT TEE - WHITE</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 6 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-6-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-6-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SKELETON HOODIE - BLACK</p>
+                            <p>550,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-6-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-6-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SWE CARDIGAN - CREAM</p>
+                            <p>480,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-6-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-6-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PIXEL TEE - LIGHT GREY</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-6-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-6-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>BIRDS FLY TEE - CREAM</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 7 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-7-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-7-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>RANSOM TEE - BLACK</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-7-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-7-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>LOGO WASHED HOODIE - SILVER</p>
+                            <p>600,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-7-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-7-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CRAYON TEE - BLACK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-7-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-7-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SWE21 CAP - DENIM</p>
+                            <p>270,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 8 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-8-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-8-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>INTL SHOULDER BAG - WHITE</p>
+                            <p>250,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-8-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-8-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CUBE SUMMER TEE - BLACK</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-8-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-8-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PIXEL TEE - BLACK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-8-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-8-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PIXEL TEE - WHITE</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 9 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-9-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-9-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>BACK TEE - BLACK</p>
+                            <p>330,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="#">
+                        <div>
+                            <img src="images/tops/hien/row-9-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-9-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>DICE TEE - BLACK</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-9-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-9-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SPLIT TEE - ORANGE</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-9-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-9-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SPLIT TEE - PINK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 10 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-10-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-10-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>DICE TEE - WHITE</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-10-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-10-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CHECKERED SHORTS</p>
+                            <p>390,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-10-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-10-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SPLIT TEE - WHITE</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-10-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-10-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>COLLAGE TEE - BLACK</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 11 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-11-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-11-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>COLLAGE TEE - WHITE</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-11-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-11-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>CHECKERED BUTTON UP SHIRT</p>
+                            <p>420,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-11-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-11-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MOTION TEE - CREAM</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-11-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-11-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MOTION TEE - RAINBOW</p>
+                            <p>320,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 12 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-12-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-12-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>PRICE TEE - WASHED BLACK</p>
+                            <p>400,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-12-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-12-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MONO AOP SHORTS - CREAM</p>
+                            <p>420,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-12-anh-3-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-12-anh-3-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MONO AOP TEE - CREAM</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-12-anh-4-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-12-anh-4-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>MONO AOP TEE - BLACK</p>
+                            <p>340,000&#8363;</p>
+                            <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- hàng 13 -->
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-13-anh-1-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-13-anh-1-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SWE21 CAP - BLACK</p>
+                            <p>270,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <a href="detail.html">
+                        <div>
+                            <img src="images/tops/hien/row-13-anh-2-hien.webp">
+                            <img  class="hidden-img" src="images/tops/an/row-13-anh-2-an.webp">
+                        </div>
+                        <div class="text-product">
+                            <p>SWE21 CAP - PINK</p>
+                            <p>270,000&#8363;</p>
+                            <!-- <span class="size">S </span>
+                            <span class="size">M </span>
+                            <span class="size">L </span>
+                            <span class="size">XL</span> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+            <!-- phân trang -->
+            <nav aria-label="Page navigation example">
+                <ul class="pagination right" style="margin: 20px 0 100px 0;">
+                  <li class="page-item"><a style="background-color: #fff; color: #000; padding: 10px 17px;" class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a style="background-color: #fff; color: #000; padding: 10px 17px;" class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a style="background-color: #fff; color: #000; padding: 10px 17px;" class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next" style="background-color: #fff; color: #000; padding: 10px 17px;">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <div class="contact">
+            <a href="https://www.facebook.com/DoanDucSeptember20" target="_blank" class="face">
+                <img src="images/iconkhac/facebook.webp" alt="facebook">
+            </a>
+            <a href="https://www.facebook.com/messages/t/1773644369525289" target="_blank" class="mess">
+                <img src="images/iconkhac/mess.png" alt="messages">
+            </a>
+        </div>
+        <!-- phần footer -->
+        <div class="text-center p-4 footer">
+            ©2021 SWE, LLC. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>

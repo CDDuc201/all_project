@@ -1,0 +1,19 @@
+Unique ID (id): Số nhận dạng duy nhất cho mỗi trường hợp.
+
+Target Diagnosis (diagnosis): Chẩn đoán mục tiêu - ung thư (M) hoặc không ung thư (B).
+
+Bán kính trung bình (radius_mean): Trung bình khoảng cách từ tâm khối u đến biên.
+
+Độ nhám trung bình (texture_mean): Sự biến đổi trung bình về cường độ màu xám.
+
+Chu vi trung bình (perimeter_mean): Trung bình chiều dài biên khối u.
+
+Diện tích trung bình (area_mean): Diện tích trung bình của khối u.
+
+Độ mịn trung bình (smoothness_mean): Sự biến đổi trong chiều dài biên khối u.
+
+Sự gọn nhẹ trung bình (compactness_mean): Mức độ gọn gàng của hình dáng khối u.
+
+Sự lõm trung bình (concavity_mean): Mức độ của các phần lõm của biên khối u.
+
+Điểm lõm trung bình (concave points_mean): Số lượng điểm lõm của biên khối u.

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style-contact.css">
+    <title>| Detail</title>
+    <link rel="icon" href="images/iconkhac/title.png">
+    <script type="text/javascript">
+        	$(document).ready(function(){
+    $('#qty_input').prop('disabled', true);
+    $('#plus-btn').click(function(){
+    	$('#qty_input').val(parseInt($('#qty_input').val()) + 1 );
+    	    });
+        $('#minus-btn').click(function(){
+    	$('#qty_input').val(parseInt($('#qty_input').val()) - 1 );
+    	if ($('#qty_input').val() == 0) {
+			$('#qty_input').val(1);
+		}
+
+    	    });
+ });
+    </script>
+</head>
+<body>
+    <!-- Menu -->
+    <div class="header">
+        <div class="heardertop">
+           <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-light ">
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                   </button>
+                   <div class="col-md-1">
+                       <a href="index.html">
+                        <img class="logo" src="images/index/logoSWE.gif">
+                       </a>
+                   </div>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                       <ul class="navbar-nav mr-auto">
+                           <li class="nav-item " style="margin-left: 65px;">
+                               <a class="navbar-brand" href="index.html">HOME</a>
+                           </li>
+                           <li class="nav-item ">
+                               <a class="navbar-brand" href="tops.html">TOPS</a>
+                           </li>
+                           <li class="nav-item ">
+                            <a class="navbar-brand" href="outerwear.html">OUTERWEAR</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navbar-brand" href="bottoms.html">BOTTOMS</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="navbar-brand" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="navbar-brand dropdown-toggle" href="#"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SALE </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">10% OFF</a> <br>
+                              <a class="dropdown-item" href="#">15% OFF</a> <br>
+                              <a class="dropdown-item" href="#">20% OFF</a> <br>
+                              <a class="dropdown-item" href="#">30% OFF</a> <br>
+                              <a class="dropdown-item" href="#">40% OFF</a> <br>
+                              <a class="dropdown-item" href="#">50% OFF</a> <br>
+                              <a class="dropdown-item" href="#">60% OFF</a> <br>
+                            </div>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="navbar-brand" href="sizechart.html">SIZE CHART</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="navbar-brand" href="contact.html">ABOUT US</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="navbar-brand" href="login.html">ĐĂNG NHẬP</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
+                          <img class="icon" src="images/index/pic-search.webp">
+                      </a>
+                      <form class="dropdown-menu" aria-labelledby="dropdownMenuButton" action="#">
+                          <input type="text" name="search" placeholder="Tìm kiếm..." required>
+                      </form>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="navbar-brand" href="cart.html"><img class="icon" src="images/index/cart-icon.webp"></a>
+                  </li>
+                   </div>
+               </nav>
+           </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container">
+        <!-- phần viết detail -->
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div>
+                    <img style="width: 100%;" src="images/iconkhac/detail-1.png">
+                </div>
+                <div>
+                    <ul>
+                        <li><img style="width: 75px; margin-right: 10px; float: left; display: block; border: 1.5px solid #000;;" src="images/iconkhac/detail-2.png"></li>
+                        <li><img style="width: 75px; margin-right: 10px; float: left; display: block; border: 1.5px solid #000;;" src="images/iconkhac/detail-3.webp"></li>
+                        <li><img style="width: 75px; margin-right: 10px; float: left; display: block; border: 1.5px solid #000;;" src="images/iconkhac/detail-4.png"></li>
+                        <li><img style="width: 75px; margin-right: 10px; float: left; display: block; border: 1.5px solid #000;;" src="images/iconkhac/detail-5.webp"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div>
+                    <h1 style="font-size: 28px;">90'S TEE - WHITE</h1>
+                    <span style="font-size: 28px;">340,000₫</span>
+                </div>
+                <hr style="margin-bottom: 50px;">
+                <div>
+                    <div class="mt-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend left_1">
+                                <button class="btn btn-dark btn-sm decor" id="minus-btn">-</button>
+                            </div>
+                            <div class="left_1">
+                                <input type="number" id="qty_input" class="form-control form-control-sm decor" value="1" min="1" style="font-size: 18px; background-color: #fff; 
+                                border-radius: 5px; border: 0px solid #eee;">
+                            </div>
+                            <div class="input-group-prepend left_1">
+                                <button class="btn btn-dark btn-sm decor" id="plus-btn">+</button>
+                            </div>
+                            <div style="float: left;margin: 0 0 0 50px;">
+                                <a class="add-cart" href="#">Thêm vào giỏ</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="clearFix"></div>
+                </div>
+                <hr style="margin-top: 120px;">
+                <div>
+                    <p style="margin-top: 35px;"><b>SKU </b> : 90-TEE-WHT-S</p>
+                    <p style="margin-top: 35px;"><u>HƯỚNG DẪN CHỌN SIZE</u></p>
+                    <ul style="color: #6d6d6d; margin-top: 35px;">
+                        <li class="light">Form áo Châu Âu.</li>
+                        <li class="light">Định lượng : 220 gsm.</li>
+                        <li class="light">100% cotton.</li>
+                        <li class="light">Sản phẩm được in lụa.</li>
+                        <li class="light">Tag logo được gắn ở tay áo.</li>
+                        <li class="light">Tem chống hàng giả của SWE được may trong sườn áo.</li>
+                        <li class="light">Các bạn vui lòng tham khảo bảng size chart trước khi đặt hàng.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <a href="https://www.facebook.com/DoanDucSeptember20" target="_blank" class="face">
+            <img src="images/iconkhac/facebook.webp" alt="facebook">
+        </a>
+        <a href="https://www.facebook.com/messages/t/1773644369525289" target="_blank" class="mess">
+            <img src="images/iconkhac/mess.png" alt="messages">
+        </a>
+    </div>
+    <div class="text-center p-4 footer">
+        ©2021 SWE, LLC. All Rights Reserved.
+    </div>
+</body>
+</html>

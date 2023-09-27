@@ -1,0 +1,213 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000000;
+    background-color: #fff;
+}
+/* Menu */
+*{font-family: 'PN', sans-serif;}
+.logo{
+    width: 165px;
+    height: 165px;
+}
+li{list-style-type: none;}
+.heardertop{background-color: #000;}
+.navbar-brand{
+    color: #fff;
+    font-size: 15px;
+}
+.navbar-brand{padding: 0px 10px;margin-top: 40px;}
+
+.navbar-brand:hover{color: #fff;text-decoration: underline;}
+.dropdown-item{padding: 0 40px;}
+.icon{
+    width: 21px;
+    height: 21px;
+}
+/* ảnh */
+.col-md-4 img{max-width: 100%;}
+.col-xs-2 img{max-width: 100%;}
+/* contact */
+.container h1{
+    margin: 40px 0;
+}
+/* size chart */
+.size{text-align: center;}
+/* login */
+.input-group-btn{display: block;}
+.myStyle{
+    background-color: #f26728;
+    border: 2px solid #000;
+    padding: 10px 65px;
+    color: #fff;
+    font-weight: 700;
+}
+.myStyle:hover{
+    background-color: #f26728;
+    border: 2.5px solid #000;
+}
+.g-recaptcha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* footer */
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+/* liên lạc */
+.mess img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+.face  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+}
+.mess img:hover, .face img:hover{
+    width: 55px;
+    height: 55px;
+}
+/* cart */
+.text-center{text-align: center;vertical-align: middle;}
+.btn-cart{
+    color: #fff;
+    background-color: #000;
+    padding: 15px 40px;
+    border-radius: 40px;
+    margin: 40px 0px;
+    border: none;
+}
+.btn-cart:hover{
+    color: #fff;
+    background-color: #000;
+}
+/* detail */
+/* +- input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+input {text-align: center; }
+.clearFix{clear: both;}
+.left_1{
+  float: left;
+  border-left: 1px solid #eee;
+  outline: none;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+  float: left;
+  margin-right: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: #fff;
+  color: #909090;
+}
+.decor{
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  background-color: #fff;
+  color: #909090;
+}
+.add-cart{
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 30px;
+  background: #000000;
+  border: 1px solid;
+  border-color: #000000;
+  display: inline-block;
+  line-height: 45px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.add-cart:hover{
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.light{line-height: 1.9;}
+/* info */
+.img-account img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+.title-account{
+    display: flex;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    padding-bottom: 20px;
+}
+.name-account h2{
+    font-weight: bold;
+    font-size: 16px;
+} 
+.list-account ul li{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    color: #a9a49e;
+    font-size: 16px;
+    margin-bottom: 25px;
+    transition: all 0.2s;
+}
+.list-account ul li:hover{
+    color: #f36c21;
+}
+.list-account span{margin: 0 10px;}
+.hoSo input{
+    display: flex;
+    width: 100%;
+    border: solid 1px #e5e5e5;
+    padding-left: 20px;
+    height: 45px;
+    text-align: inherit;
+}
+.hoSo{margin-top: 20px;}
+.nutXacNhan{
+    background-color: #f26728;
+    padding: 14px 45px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    transition:  all 0.3s ease;
+}
+.nutXacNhan:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #f26728;
+    border: 1px solid #f26728;
+}

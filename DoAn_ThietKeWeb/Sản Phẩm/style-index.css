@@ -1,0 +1,112 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000000;
+    background-color: #fff;
+}
+*{font-family: 'PN', sans-serif;}
+/* Menu */
+.logo{
+    width: 165px;
+    height: 165px;
+}
+li{list-style-type: none;}
+.heardertop{background-color: #000;}
+.navbar-brand{
+    color: #fff;
+    font-size: 15px;
+}
+.navbar-brand{padding: 0px 10px;margin-top: 40px;}
+
+.navbar-brand:hover{color: #fff;text-decoration: underline;}
+.dropdown-item{padding: 0 40px;}
+.icon{
+    width: 21px;
+    height: 21px;
+}
+/* ảnh */
+.col-md-4 img{
+    max-width: 100%;
+}
+.col-xs-2 img{
+    max-width: 100%;
+}
+/* container */
+.container h3{
+    font-family: 'SVN-Veneer';
+    font-size: 40px;
+    color: #f26728;
+    text-align: center;
+}
+.viewall{
+    text-align: center; 
+    padding: 20px 0; 
+}
+.viewall a{
+    font-family: 'SVN-Veneer';
+    font-size: 40px;
+    color: #f26728;
+}
+.container h3::after{
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    width: 16%;
+    height: 3px;
+    background: #3a3a3a;
+    margin: 0px auto;
+    position: absolute;
+}
+.text-product{
+    text-align: center;
+}
+.hidden-img{
+    width: 92%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+	left: 18px;
+	z-index: 1;
+    transition: opacity 0.6s;
+}
+.hidden-img:hover{
+    opacity: 1; 
+}
+.footer{
+    background-color: #000;
+    color: #fff;    
+    padding: 20px 0;
+}
+p{
+    font-weight: bold;
+    color: #000;
+}
+/* liên lạc */
+.mess img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+.face  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+}
+.mess img:hover, .face img:hover{
+    width: 55px;
+    height: 55px;
+}

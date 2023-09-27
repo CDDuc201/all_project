@@ -1,0 +1,139 @@
+/* Menu */
+*{
+    font-family: 'PN', sans-serif;
+}
+/* Menu */
+.logo{
+    width: 165px;
+    height: 165px;
+}
+li{list-style-type: none;}
+.heardertop{background-color: #000;}
+.navbar-brand{
+    color: #fff;
+    font-size: 15px;
+}
+.navbar-brand{padding: 0px 10px;margin-top: 40px;}
+
+.navbar-brand:hover{color: #fff;text-decoration: underline;}
+.dropdown-item{padding: 0 40px;}
+.icon{
+    width: 21px;
+    height: 21px;
+}
+/* ảnh */
+.col-md-4 img{
+    max-width: 100%;
+}
+.col-xs-2 img{
+    max-width: 100%;
+}
+/* topbar */
+.topbar{margin-top: 100px;}
+.left{float: left;}
+.right{float: right;}
+.clearFix{clear: both;}
+.topbar ul li{list-style-type: none;}
+.topbar li{
+    float: left;
+    padding: 8px 11px;
+}
+/* trái */
+.flex{
+    display: flex;
+}
+.flex li{
+    background-color: #fff;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+.flex li:hover{
+    background-color: black;
+}
+.topbar i, .topbar span{
+    color: #000;
+    transition: background-color 0.3s;
+}
+.topbar i:hover, .topbar span:hover{
+    color: #fff;
+    background-color: black;
+}
+/* phải */
+.dropdown{
+    list-style-type: none;
+}
+.khung{
+    color: black;
+    border: 1px solid #999;
+    padding: 10px 10px;
+}
+.khung:hover{
+    text-decoration: none;
+    color: #000;
+}
+/* list of product */
+.text-product{
+    text-align: center;
+}
+.col-md-3 img{
+    max-width: 100%;
+}
+
+.hidden-img{
+    width: 263px;
+    height: 263px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+	left: 16px;
+	z-index: 1;
+    transition: opacity 0.6s;
+}
+.hidden-img:hover{
+    opacity: 1;
+}
+p{
+    font-weight: bold;
+    color: #000;
+}
+span{
+    color: #000;
+    font-weight: 700;
+}
+/* phân trang */
+.page-link{
+    margin-right: 10px;
+}
+/* phần footer */
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+/* liên lạc */
+.mess img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+.face  img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+}
+.mess img:hover, .face img:hover{
+    width: 55px;
+    height: 55px;
+}
